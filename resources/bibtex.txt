@@ -1,0 +1,6 @@
+@article{wu2025spatialscore,
+    author    = {Li, Zeqian and Di, Shangzhe and Zhai, Zhonghua and Huang, Weilin and Wang, Yanfeng and Xie, Weidi},
+    title     = {Universal Video Temporal Grounding with Generative Multi-modal Large Language Models},
+    journal   = {--},
+    year      = {2025},
+}
