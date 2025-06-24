@@ -1,6 +1,6 @@
 @article{li2025unitime,
     author    = {Li, Zeqian and Di, Shangzhe and Zhai, Zhonghua and Huang, Weilin and Wang, Yanfeng and Xie, Weidi},
     title     = {Universal Video Temporal Grounding with Generative Multi-modal Large Language Models},
-    journal   = {--},
+    journal   = {arXiv preprint arXiv:2506.18883},
     year      = {2025},
 }
