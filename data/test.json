@@ -1,0 +1,2 @@
+[{"qid": 0, "id": "93231c7e-1cf4-4a20-b1f8-9cc9428915b2", "annos": [{"query": "what did I put in the black dustbin?", "window": [[425.0, 431.0]]}], "duration": 480, "video_path": "./videos/93231c7e-1cf4-4a20-b1f8-9cc9428915b2.mp4"},
+{"qid": 1, "id": "3MSZA", "annos": [{"query": "person turn a light on.", "window": [[24.3, 30.4]]}], "duration": 30.96, "video_path": "./videos/3MSZA.mp4"}]
