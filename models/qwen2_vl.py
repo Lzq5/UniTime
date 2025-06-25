@@ -200,12 +200,6 @@ class Qwen2VLMRForConditionalGeneration(Qwen2VLForConditionalGeneration):
                 answer_indices = [(indices[2 + i * 2 + 1], indices[2 + i * 2 + 2]) for i in range(num_qa - 1)]
                 answer_indices.append([indices[-1], len(input_ids)])
 
-                # import ipdb;ipdb.set_trace()
-                # if st < len(input_tokens):
-                #     st_idx = llm_pos_ids_list[-1].max() + 1 if len(llm_pos_ids_list) > 0 else 0
-                #     text_len = len(input_tokens) - st
-                #     llm_pos_ids_list.append(torch.arange(text_len).view(1, -1).expand(3, -1) + st_idx)
-
                 st_idx = llm_pos_ids_list[-1].max() + 1 if len(llm_pos_ids_list) > 0 else 0
                 text_len = prompt_indices[1] - st
                 llm_pos_ids_list.append(torch.arange(text_len).view(1, -1).expand(3, -1) + st_idx)
@@ -631,17 +625,6 @@ class Qwen2VLMRProcessor(Qwen2VLProcessor):
             video_index = 0
             for i in range(len(text)):
                 while "<|video_pad|>" in text[i]:
-                    ###########
-                    # if timestamps is not None:
-                    # # import ipdb;ipdb.set_trace()
-                    #     assert video_grid_thw[index][0] == len(timestamps[index])
-                    #     t, h, w = video_grid_thw[index]
-                    #     replacement = ""
-                    #     for timestamp in timestamps[index]:
-                    #         replacement += timestamp + "<|placeholder|>" * (h * w // merge_length)
-                    #     text[i] = text[i].replace("<|video_pad|>", replacement, 1)
-                    #############
-                    ###########
                     if timestamps is not None:
                         # import ipdb;ipdb.set_trace()
                         if combine_t_list is None:

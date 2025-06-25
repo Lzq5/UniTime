@@ -229,9 +229,8 @@ def run_inference(model, processor, data, args, device):
 
 def main():
     parser = argparse.ArgumentParser(description='Run Qwen2-VL inference on Temporal Grounding')
-    parser.add_argument('--model_local_path', type=str, default='/raid/haoningwu/zeqianli/models/Qwen2-VL-7B-Instruct',
-                        help='Path to the local model')
-    parser.add_argument('--output_dir', type=str, default='debug')
+    parser.add_argument('--model_local_path', type=str, default='Path to the Qwen2-VL', help='Path to the local model')
+    parser.add_argument('--output_dir', type=str, default='./results')
     parser.add_argument('--model_finetune_path', type=str, default=None, help='Path to the finetune model')
     parser.add_argument('--data_path', type=str, default='./datasets/cgbench/val_vc.json', help='Path to the data JSON file')
     parser.add_argument('--feat_folder', type=str, default='./tmp_feature')
