@@ -26,6 +26,7 @@ Please stay tuned! Feel free to reach out for discussions!
 - PyTorch == 2.1.2
 - accelerate == 1.0.1
 - transformers == 4.49.0
+- peft == 0.14.0
 
 ## Inference
 
