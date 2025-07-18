@@ -66,11 +66,11 @@ Please stay tuned! Feel free to reach out for discussions!
 ## Citation
 If you use this code and data for your research or project, please cite:
 
-	@article{li2025unitime,
-        author    = {Li, Zeqian and Di, Shangzhe and Zhai, Zhonghua and Huang, Weilin and Wang, Yanfeng and Xie, Weidi},
-        title     = {Universal Video Temporal Grounding with Generative Multi-modal Large Language Models},
-        journal   = {arXiv preprint arXiv:2506.18883},
-        year      = {2025},
+	@article{li2025universal,
+        title={Universal Video Temporal Grounding with Generative Multi-modal Large Language Models},
+        author={Li, Zeqian and Di, Shangzhe and Zhai, Zhonghua and Huang, Weilin and Wang, Yanfeng and Xie, Weidi},
+        journal={arXiv preprint arXiv:2506.18883},
+        year={2025}
     }
 
 ## Acknowledgements
