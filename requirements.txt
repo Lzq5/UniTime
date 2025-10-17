@@ -1,0 +1,10 @@
+accelerate == 1.0.1
+transformers == 4.49.0
+peft == 0.14.0
+decord == 0.6.0
+numpy == 1.26.4
+pandas == 2.2.3
+deepspeed == 0.16.4
+flash-attn == 2.7.2.post1
+tensorboard == 2.18.0
+nncore == 0.4.5
