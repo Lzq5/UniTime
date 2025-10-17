@@ -1,19 +1,19 @@
 # UniTime
-This repository contains the official PyTorch implementation of "Universal Video Temporal Grounding with Generative Multi-modal Large Language Models", NeurIPS 2025.
+This repository provides the official PyTorch implementation of **"Universal Video Temporal Grounding with Generative Multi-modal Large Language Models"** (NeurIPS 2025).
 
-[Project Page](https://lzq5.github.io/UniTime/) $\cdot$ [Paper](https://arxiv.org/abs/2506.18883/) $\cdot$ [Model](https://huggingface.co/zeqianli/UniTime)
+[🌐 Project Page](https://lzq5.github.io/UniTime/) $\cdot$ [📄 Paper](https://arxiv.org/abs/2506.18883/) $\cdot$ [🤗 Model](https://huggingface.co/zeqianli/UniTime)
 
 <div align="center">
    <img src="./assets/teaser.png">
 </div>
 
-## News
-- [2025.10] We have released the code for data construction, as well as training and evaluation.
-- [2025.9] UniTime got accepted by NeurIPS 2025!
-- [2025.6] We have released the inference code.
-- [2025.6] Our pre-print paper is released on arXiv.
+## 🔥 News
+- [2025.10] Released the code for data construction, training, and evaluation.
+- [2025.09] UniTime accepted to NeurIPS 2025!
+- [2025.06] Released the inference code.
+- [2025.06] Preprint available on arXiv.
 
-## Installation
+## ⚙️ Installation
 ```bash 
 conda create -n UniTime python=3.10
 conda activate UniTime
@@ -21,10 +21,10 @@ pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https
 pip install -r requirements.txt
 ```
 
-## Quickstart
+## 🚀 Quick Start
 1. **Download Model Checkpoints**  
    - Obtain the pretrained checkpoints from [Qwen2-VL-7B](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) and [UniTime](https://huggingface.co/zeqianli/UniTime).  
-   - Set the `model_local_path` to your local path for Qwen2-VL-7B, and `model_finetune_path` to your UniTime checkpoint.
+   - Set `model_local_path` to your local path for Qwen2-VL-7B, and `model_finetune_path` to your UniTime checkpoint.
 
 2. **Prepare Input Data**  
    - Create a JSON file for inference as `data/test.json`, and specify its path via the `data_path` argument.
@@ -62,7 +62,7 @@ pip install -r requirements.txt
        }
    ]
    ```
-   For reference, we provide construction code for Ego4D-NLQ in `dastasets/data_ego4d.py`. You may modify the `load_data_to_dict` function to accommodate the annotation formats of other datasets.
+   Example construction code for Ego4D-NLQ can be found in `datasets/data_ego4d.py` (see `load_data_to_dict()` function). Modify it as needed for other datasets.
 
 3. (Optional) You may also download preprocessed annotations for each dataset from [UniTime-Data](https://huggingface.co/datasets/zeqianli/UniTime-Data).
 
@@ -83,7 +83,7 @@ python eval_metrics.py --res ./results/RUN_NAME/results.json
 ```
 **Note**: Modify the arguments marked with `ToModify` in the code according to the following definitions:
 
-| Argument | Definition |
+| Argument | Description |
 |-|-|
 | path_to_qwen2vl7B | Path to the Qwen2-VL-7B model directory |
 | path_to_feature_root | Root directory containing features for all datasets |
@@ -95,25 +95,21 @@ python eval_metrics.py --res ./results/RUN_NAME/results.json
 | RUN_NAME | Experiment identifier/name for this training run |
 
 
-
-
-
-
-
-
 ## Citation
 If you use this code and data for your research or project, please cite:
 
-	@article{li2025universal,
-        title={Universal Video Temporal Grounding with Generative Multi-modal Large Language Models},
-        author={Li, Zeqian and Di, Shangzhe and Zhai, Zhonghua and Huang, Weilin and Wang, Yanfeng and Xie, Weidi},
-        journal={arXiv preprint arXiv:2506.18883},
-        year={2025}
-    }
+	@inproceedings{unitime2025,
+	    title={Universal Video Temporal Grounding with Generative Multi-modal Large Language Models},
+	    author={Li, Zeqian and Di, Shangzhe and Zhai, Zhonghua and Huang, Weilin and Wang, Yanfeng and Xie, Weidi},
+	    booktitle={NeurIPS},
+	    year={2025}
+	}
 
 ## Acknowledgements
-Many thanks to the code bases from [lmms-finetune](https://github.com/zjysteven/lmms-finetune) and [LamRA](https://github.com/Code-kunkun/LamRA).
+This project builds upon several excellent open-source efforts:
+- [lmms-finetune](https://github.com/zjysteven/lmms-finetune)
+- [LamRA](https://github.com/Code-kunkun/LamRA).
 
 
 ## Contact
-If you have any questions, please feel free to contact lzq0103@sjtu.edu.cn.
+For questions, please contact: lzq0103@sjtu.edu.cn.
