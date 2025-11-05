@@ -135,7 +135,7 @@ def main():
     feat_root = 'path_to_feature_folder' #[ToModify]
     ann_root = './'
     repeat_num = 4 #[ToModify] 4 for long video datasets, 1 for short video datasets
-    annos_num = 45 #[ToModify] 4 for long video datasets, 1 for short video datasets
+    annos_num = 45 #[ToModify] The number of QA samples for video-centric training can be adjusted based on your actual GPU memory.
     
     print("Processing training data...")
     raw_data = json.load(open('./nlq_train.json'))['videos']
